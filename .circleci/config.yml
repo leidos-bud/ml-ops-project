@@ -4,11 +4,11 @@
 #
 version: 2.1
 jobs:
-  lint-files:
+  build:
     docker:
-      # Use the same Docker base as the project
       - image: python:3.7.3-stretch
-        working_directory: ~/repo
+
+    working_directory: ~/repo
 
     steps:
       - checkout
@@ -37,8 +37,8 @@ jobs:
 
       # run lint!
       - run:
-        name: run lint
-        command: |
-          . venv/bin/activate
-          make lint 
+          name: run lint
+          command: |
+            . venv/bin/activate
+            make lint 
 
