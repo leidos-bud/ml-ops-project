@@ -53,7 +53,7 @@
 ├─────config.yml                          - CircleCI CI/CD Linting
 ├─Dockerfile                              - Docker Image Definition
 ├─.gitignore                              - Git File/Folder Ignore Definition
-├─Makefile                                - Build Instructions
+├─Makefile                                - Make Build Instructions
 ├─make_prediction.sh                      - BASH Script for Making Predictions
 ├─model_data
 ├─────boston_housing_prediction.joblib    - Pre-trained Model
