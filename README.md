@@ -27,7 +27,8 @@
 >8. Output should resemble the `docker_out.txt` file located in the output_txt_files folder
 >9. Go back to the terminal running Docker and press Control+C to quit
 
-## Kubernetes Deployment & Usage Instructions ( MUST COMPLETE *ALL* DOCKER DEPLOYMENT STEPS FIRST )
+## Kubernetes Deployment & Usage Instructions 
+### ( MUST COMPLETE **ALL** DOCKER DEPLOYMENT STEPS FIRST )
 ------------
 >1. Edit the `upload_docker.sh` script and update the `dockerpath` as needed
 >2. Run `./upload_docker.sh` to upload your Docker image
