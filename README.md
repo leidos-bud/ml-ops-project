@@ -45,21 +45,23 @@
 
 ## Folder Structure
 ------------
->├─app.py                                  - Python application
->├─.circleci
->├─────config.yml                          - CircleCI CI/CD Linting
->├─Dockerfile                              - Docker Image Definition
->├─.gitignore                              - Git File/Folder Ignore Definition
->├─Makefile                                - Build Instructions
->├─make_prediction.sh                      - BASH Script for Making Predictions
->├─model_data
->├─────boston_housing_prediction.joblib    - Pre-trained Model
->├─────housing.csv                         - Housing Data Information
->├─output_txt_files
->├─────docker_out.txt                      - Sample Output From Docker Prediction
->├─────kubernetes_out.txt                  - Sample Output From Kubernetes Prediction
->├─README.md                               - This Document
->├─requirements.txt                        - Required Python Modules ( installed by Makefile )
->├─run_docker.sh                           - BASH Script for Building and Running Docker Image
->├─run_kubernetes.sh                       - BASH Script for Creating Kubernetes Deployment
->└─upload_docker.sh                        - BASH Script for Pushing (uploading) Docker Image
+```
+├─app.py                                  - Python application
+├─.circleci
+├─────config.yml                          - CircleCI CI/CD Linting
+├─Dockerfile                              - Docker Image Definition
+├─.gitignore                              - Git File/Folder Ignore Definition
+├─Makefile                                - Build Instructions
+├─make_prediction.sh                      - BASH Script for Making Predictions
+├─model_data
+├─────boston_housing_prediction.joblib    - Pre-trained Model
+├─────housing.csv                         - Housing Data Information
+├─output_txt_files
+├─────docker_out.txt                      - Sample Output From Docker Prediction
+├─────kubernetes_out.txt                  - Sample Output From Kubernetes Prediction
+├─README.md                               - This Document
+├─requirements.txt                        - Required Python Modules ( installed by Makefile )
+├─run_docker.sh                           - BASH Script for Building and Running Docker Image
+├─run_kubernetes.sh                       - BASH Script for Creating Kubernetes Deployment
+└─upload_docker.sh                        - BASH Script for Pushing (uploading) Docker Image
+```
