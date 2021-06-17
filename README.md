@@ -36,8 +36,10 @@
 >4. Edit the `run_kubernetes.sh` script and update the `dockerpath` as needed
 >5. Run `./run_kubernetes.sh` to create a Kubernetes deployment
 >6. Wait until you see the following lines
->>    Forwarding from 127.0.0.1:8000 -> 80
->>    Forwarding from [::1]:8000 -> 80
+```
+>    Forwarding from 127.0.0.1:8000 -> 80
+>    Forwarding from [::1]:8000 -> 80
+```
 >7. Open a new terminal window/tab and run `./make_prediction.sh` to make a prediction
 >8. Output should resemble the `kubernetes_out.txt` file located in the output_txt_files folder
 >9. Go back to the terminal running Kubernetes and press Control+C to quit
