@@ -17,6 +17,7 @@ install:
 	source ./venv/bin/activate && \
 	pip install --upgrade pip && \
 	pip install -r requirements.txt
+	./hadolint --version || (curl -Lo hadolint https://github.com/hadolint/hadolint/releases/download/v2.5.0/hadolint-$(OS)-x86_64 && chmod +x hadolint)
 
 test:
 	# Additional, optional, tests could go here
@@ -24,8 +25,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
-	which hadolint || (curl -Lo hadolint https://github.com/hadolint/hadolint/releases/download/v2.5.0/hadolint-$(OS)-x86_64 && chmod +x hadolint && sudo mv hadolint /usr/local/bin)
-	hadolint Dockerfile
+	./hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
 	source ./venv/bin/activate && \
