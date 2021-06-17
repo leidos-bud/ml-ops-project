@@ -32,7 +32,7 @@
 ------------
 >1. Edit the `upload_docker.sh` script and update the `dockerpath` as needed
 >2. Run `./upload_docker.sh` to upload your Docker image
->3. Start minikube (or other Kubernetes solution)
+>3. Run `minikube start` (or prepare other Kubernetes solution)
 >4. Edit the `run_kubernetes.sh` script and update the `dockerpath` as needed
 >5. Run `./run_kubernetes.sh` to create a Kubernetes deployment
 >6. Wait until you see the following lines
