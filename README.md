@@ -1,7 +1,7 @@
 # Boston Housing Market Prediction API
-=========
+------------
 ## Status: [![leidos-bud](https://circleci.com/gh/leidos-bud/ml-ops-project.svg?style=svg)]()
-=========
+------------
 
 ## Summary
 ------------
