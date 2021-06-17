@@ -1,1 +1,8 @@
-<paste log output from Kubernetes-mediated prediction, here>
+deployment.apps/udacity-ml created
+deployment.apps/udacity-ml condition met
+NAME                          READY   STATUS    RESTARTS   AGE
+udacity-ml-78769bb45c-tlz4g   1/1     Running   0          2s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+

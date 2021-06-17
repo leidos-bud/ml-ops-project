@@ -9,7 +9,8 @@ port=8000
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl create deployment $deployment --image=$dockerpath
-kubectl wait --for=condition=available --all deployments
+kubectl wait --for=condition=available --timeout=60s deployments/udacity-ml
+kubectl wait --for=condition=ready --timeout=60s pod/$(kubectl get pods -l=app=udacity-ml | grep udacity | awk {'print $1'})
 
 # Step 3:
 # List kubernetes pods
